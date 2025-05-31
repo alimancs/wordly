@@ -23,7 +23,6 @@ const SearchCard = ( { query, setQuery, onPress, isLoading } ) => {
 
     const debounceSearch = useCallback(
         debounce( ( word )=> {
-            console.log(word)
             getSearchArray(word);
             }, 500, []
         )
