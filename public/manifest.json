@@ -1,0 +1,16 @@
+{
+    "short_name":"Wordly",
+    "name":"Word-Search engine for words",
+    "icons": [
+        {
+            "src": "./wordly_logo.png",
+            "type": "image/png",
+            "sizes":"1024*1024"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "description": "Wordly is a word search engine that helps you find words based on their meanings, synonyms, antonyms, and more. It is designed to be fast, efficient, and easy to use."
+}
