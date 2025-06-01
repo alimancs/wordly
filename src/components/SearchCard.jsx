@@ -49,7 +49,7 @@ const SearchCard = ( { query, setQuery, onPress, isLoading } ) => {
         <div className="w-[92%] md:w-[42%] top-[130px] h-fit flex-col flex bg-white rounded-[10px] py-2 absolute shadow-lg shadow-black/25">
             <div className="w-[100%] h-[fit] flex flex-row rounded-[15px] px-2 items-center gap-2">
                 <SearchIcon size={'15px'}/>
-                <input onKeyDown={search} value={query} onChange={handleChange} placeholder="Search.." className="flex-grow flex-1 px-2 outline-none h-[30px]"/>
+                <input title="query" name="query" onKeyDown={search} value={query} onChange={handleChange} placeholder="Search.." className="flex-grow flex-1 px-2 outline-none h-[30px]"/>
                 { isLoading && <CycleLoader/> }
             </div>
                 { similarWords.length>0 && (

@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import Layout from "./components/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home";
 
 const App = () => {
     return (
-        <div className="md:h-screen h-[900px] flex flex-col justify-end w-screen bg-[#3a0ca3]">
-            <div className="w-screen h-[60%] rounded-tl-[100%] rounded-tr-[40%] bg-[#4cc9f0]"></div>
-            <Layout/>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home/>}/> 
+            </Routes>
+        </BrowserRouter>
     )
 }
 
