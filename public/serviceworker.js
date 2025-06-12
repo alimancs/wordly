@@ -1,5 +1,5 @@
-const CACHE_NAME = "wordly-cache-v2";
-const urlToCache = [ "./offline.html", "./index.html", "./favicon.ico", "./wordly_logo.png" ];
+const CACHE_NAME = "wordly-cache-v1.1";
+const urlToCache = [ "./offline.html", "./favicon.ico", "./wordly_logo.png" ];
 
 const self = this;
 // service worker install
