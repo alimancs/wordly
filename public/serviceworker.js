@@ -1,4 +1,4 @@
-const CACHE_NAME = "wordly-cache-v1.31";
+const CACHE_NAME = "wordly-cache-v1.32";
 const urlToCache = [ "./offline.html", "./favicon.ico", "./wordly_logo.png", "/favorites" ];
 
 const self = this;
