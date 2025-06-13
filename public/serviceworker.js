@@ -1,4 +1,4 @@
-const CACHE_NAME = "wordly-cache-v1.10";
+const CACHE_NAME = "wordly-cache-v1.31";
 const urlToCache = [ "./offline.html", "./favicon.ico", "./wordly_logo.png", "/favorites" ];
 
 const self = this;
@@ -29,7 +29,13 @@ self.addEventListener('fetch', (event) => {
                     const fetchResponse = await fetch(event.request);
                     return fetchResponse;
                 } catch {
-                    return await caches.match(event.request.url.includes('/favorites') ? '/favorites':'/offline.html');
+                    const path = new URL(event.request.url).pathname;
+                    console.log(path);
+                    if (path === "/favorites") {
+                        return await caches.match( '/favorites');
+                    }
+                    // If the fetch fails (e.g., offline), we return the cached favorites page
+                    return await caches.match( '/offline.html');
                 }
             })()
         );

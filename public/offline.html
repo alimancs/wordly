@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/wordly_logo.png" />
-    <title>Wordly- Offline</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div style="display: flex; flex-direction: column; height: 100%; width: 100%;justify-items: center; align-items: center; padding-top: 50px;">
-        <span style="font-weight: 600;font-size: 20px; text-align: center;width: 100%; color: blue;">Please go online to be able to use wordly</span>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offline | Wordly</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3a0ca3;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 400px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4cc9f0;
+      color: #3a0ca3;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: #3a0ca3;
+      color: #ffffff;
+      border: 2px solid #4cc9f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>You're Offline</h1>
+    <p>It looks like you lost your internet connection.</p>
+    <p>You can still view your saved words:</p>
+    <a href="/favorites">Go to Favorites</a>
+  </div>
+</body>
 </html>
